@@ -48,10 +48,10 @@ $navItems = [
 
 ];
 ?>
-<nav class="d-flex">
+<nav class="d-flex justify-content-between">
 
-    <div class="col-3 text-start ">
-        <img src="../img/dc-logo.png" alt="">
+    <div class="col-3 text-start">
+        <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
     </div>
 
     <ul class="nav justify-content-center">
@@ -61,10 +61,16 @@ $navItems = [
         <?php
         foreach ($navItems as $navItem) :
         ?>
-            <li class="nav-item "><a href="/<?php echo $navItem['link']; ?>"><?php echo $navItem['text']; ?></a></li>
+            <li class="nav-item"><a class="nav-link" href="/<?php echo $navItem['link']; ?>"><?php echo $navItem['text']; ?></a></li>
+
+
 
         <?php
         endforeach;
         ?>
     </ul>
 </nav>
+
+<style>
+
+</style>
