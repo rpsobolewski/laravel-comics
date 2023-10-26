@@ -1,3 +1,9 @@
-@import '~bootstrap/scss/bootstrap';
 
-@import './partials/nav';
+
+
+
+@import '~bootstrap/scss/bootstrap';
+@import 'partials/nav';
+*{
+font-family: 'Fira Sans', sans-serif;
+}

@@ -1,76 +1,28 @@
-<?php
+<div class="banner">
+    <div class="container  d-flex justify-content-end">
+        <div class="col-1">DC POWER VISA</div>
+        <div class="col-1">ADDITIONAL DC SITES</div>
+    </div>
+</div>
+<nav class=" container d-flex justify-content-between">
 
-
-
-
-$navItems = [
-
-    [
-        'text' => 'CHARACTERS',
-        'link' => 'characters'
-    ],
-    [
-        'text' => 'COMICS',
-        'link' => 'comics'
-    ],
-    [
-        'text' => 'MOVIES',
-        'link' => 'movies'
-    ],
-    [
-        'text' => 'TV',
-        'link' => 'tv'
-    ],
-    [
-        'text' => 'GAMES',
-        'link' => 'games'
-    ],
-    [
-        'text' => 'COLLECTIBLES',
-        'link' => 'collectibles'
-    ],
-    [
-        'text' => 'VIDEOS',
-        'link' => 'videos'
-    ],
-    [
-        'text' => 'FANS',
-        'link' => 'fans'
-    ],
-    [
-        'text' => 'NEWS',
-        'link' => 'news'
-    ],
-    [
-        'text' => 'SHOP',
-        'link' => 'shop'
-    ],
-
-];
-?>
-<nav class="d-flex justify-content-between">
-
-    <div class="col-3 text-start">
-        <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="">
+    <div class="col-1 text-start ">
+        <a href="{{route('home')}}">
+            <img class="logo" src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="dc">
+        </a>
     </div>
 
-    <ul class="nav justify-content-center">
+    <ul class="nav justify-content-between col-9">
 
 
 
         <?php
-        foreach ($navItems as $navItem) :
+        foreach (config('nav-links') as $navItem) :
         ?>
-            <li class="nav-item"><a class="nav-link" href="/<?php echo $navItem['link']; ?>"><?php echo $navItem['text']; ?></a></li>
-
-
+            <li class="nav-item align-self-center"><a class="" href="/<?php echo $navItem['link']; ?>"><?php echo $navItem['text']; ?></a></li>
 
         <?php
         endforeach;
         ?>
     </ul>
 </nav>
-
-<style>
-
-</style>
