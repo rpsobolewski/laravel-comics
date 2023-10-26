@@ -14,7 +14,7 @@
 
 <body>
     @include('nav')
-    <h1>ao</h1>
+
 
     @yield('content')
 

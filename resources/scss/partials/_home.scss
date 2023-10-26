@@ -1,0 +1,40 @@
+main {
+    background-image: url(../img/jumbotron.jpg);
+
+
+}
+
+.jumbo {
+    position: relative;
+    height: 500px;
+}
+
+.buttonCurrent {
+    color: white;
+    background-color: #0282f9FF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    position: absolute;
+    bottom: -20px;
+    left: 47px;
+}
+.comicThumb {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+
+}
+.comicList {
+    background-color: #1c1c1c;
+    color: white;
+}
+.buttonLoad {
+    color: white;
+    background-color: #0282f9FF;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    margin-bottom: 7px;
+
+}

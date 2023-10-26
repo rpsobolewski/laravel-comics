@@ -12,7 +12,7 @@
         </a>
     </div>
 
-    <ul class="nav justify-content-between col-9">
+    <ul class="nav justify-content-between align-items-center col-9">
 
 
 
@@ -24,5 +24,6 @@
         <?php
         endforeach;
         ?>
+        <li><input class="" type="serch" placeholder="search"></li>
     </ul>
 </nav>
