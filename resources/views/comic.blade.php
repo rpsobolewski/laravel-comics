@@ -1,4 +1,4 @@
-<div class="comicList">
+<div class="comicList pt-4">
     <div class="d-flex flex-wrap container ">
 
         <?php
